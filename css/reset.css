@@ -1,0 +1,19 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
