@@ -1,0 +1,40 @@
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+#no-mobile > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: 200px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+#no-mobile > div i {
+  font-size: 40px;
+  color: #ff6347;
+}
+
+#no-mobile > div > p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}

@@ -1,101 +1,51 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
-    <title>Kokoa Challenge</title>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Kokoa Clone</title>
   </head>
   <body>
-    <div class="wrap">
-      <header>
-		<div class="status-bar">
-			<div>
-				<span>No Service</span>
-				<i class="fas fa-wifi" aria-hidden="true"></i>
-			</div>
-			<div>
-				<span>18:43</span>
-			</div>
-			<div>
-				<span>100%</span>
-				<i class="fas fa-battery-full fa-lg" aria-hidden="true"></i>
-				<i class="fas fa-bolt" aria-hidden="true"></i>
-			</div>
-		</div>
-	  </header>
-	  <div class="login-text">
-		<h1>Welcome to Kakao Talk</h1>
-		<p>If you have a Kakao Account, log in with<br/>your email or phone number.</p>
-	  </div>
-	  <form action="friends.html" class="login-form">
-		<input type="text" name="id" placeholder="Please enter your ID" minlength="1" required/>
-		<input type="password" name="pw" placeholder="Please enter your PASSWORD" minlength="1" required/>
-		<button type="submit">Log in</button>
-	  </form>
-	  <a href="#;" class="find-link">Find Kakao Account or Password</a>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
     </div>
 
-	<!-- 알림창 -->
-	<div class="no-mobile">
-		no mobile
-	</div>
-	
-    <!-- ❌ DON'T DELETE THIS OR WORRY ABOUT THIS 👇🏻 ❌ -->
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <a href="#">Find Kokoa Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <div>
+        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+        <p>Your screen is too big 😥</p>
+      </div>
+    </div>
+
     <script
       src="https://kit.fontawesome.com/e7d067e919.js"
       crossorigin="anonymous"
     ></script>
   </body>
 </html>
-
-
-<!--
-  	1. 로그인 ( v ) - login.html
-
-	2. 친구 리스트 () - friends.html
-	- 스플레시 이미지 ()
-
-	3. 채팅 () - chats.html
-	4. 채팅상세 () - chats-detail.html
-	5. 검색 () - search.html
-	6. 더보기 () - setting.html
-
-	7. 설정
-
-
-	공통 컴포넌트
-	/ 헤더
-		staus bar (v)
-
-		alt-title ()
-
-		친구 - 친구 | 돋보기 음악 설정
-
-		채팅 - 채팅 | 돋보기 말풍선 음악 설정
-
-		검색 - 검색 | 돋보기 설정
-
-		더보기 - 더보기 | 돋보기 음악 설정
-
-		셋팅 - 뒤로가기 타이틀 돋보기
-
-		채팅 상세 - 뒤로가기 타이틀 더보기
-
-  	/ 유저 컴포넌트 ()
-  		프로필사진 : 이름
-  				    상세
-
-	    프로필사진 : 이름 : 말풍선
-  					상세
-
-	    프로필사진 : 이름  : 시간
-  					내용  : 숫자
-
-    / 네비게이션 ()
-  		친구 채팅 검색 더보기 => 엑티브모두
-
-	/ 미디어 쿼리 일정 크기 이상은 화면 가리기 ()
-
-	  
--->
