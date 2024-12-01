@@ -22,8 +22,7 @@
 
 #login-form input {
   border: none;
-  padding: 15px 0px;
-  font-size: 18px;
+  padding: 15px 10px;
   margin-bottom: 25px;
 }
 
@@ -45,6 +44,7 @@
   cursor: pointer;
   padding: 20px 0px;
   border-radius: 5px;
+  color: #fff;
 }
 
 #login-form a {
@@ -52,4 +52,8 @@
   text-decoration: none;
   color: inherit;
   font-size: 13px;
+}
+
+#login-form a:hover {
+  color: var(--purple);
 }
