@@ -27,7 +27,9 @@
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
 
@@ -40,11 +42,11 @@
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="https://avatars3.githubusercontent.com/u/3612017"
+            src="./img/all.jpg"
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Nicolas</h4>
+            <h4 class="user-component__title">LE SSERAFIM</h4>
             <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
           </div>
         </div>
@@ -52,28 +54,71 @@
       </div>
       <div class="friends-screen__channel">
         <div class="friends-screen__channel-header">
-          <span>Channel</span>
+          <span>Friends 5</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://avatars3.githubusercontent.com/u/3612017"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
+        <ul class="user-list">
+          <li>
+            <div class="user-component">
+              <div class="user-component__column">
+                <img src="./img/1.webp" class="user-component__avatar user-component__avatar--sm">
+                <div class="user-component__text">
+                  <h4 class="user-component__title">사쿠라 🐱</h4>
+                  <h6 class="user-component__subtitle">겸손이 일본어로 뭐지?</h6>
+                </div>
+              </div>
+              <div class="user-component__column"></div>
             </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
+          </li>
+          <li>
+            <div class="user-component">
+              <div class="user-component__column">
+                <img src="./img/2.webp" class="user-component__avatar user-component__avatar--sm">
+                <div class="user-component__text">
+                  <h4 class="user-component__title">김채원 🐻</h4>
+                  <h6 class="user-component__subtitle">피어나! 너 내 도..도도독..</h6>
+                </div>
+              </div>
+              <div class="user-component__column"></div>
             </div>
-          </div>
-        </div>
+          </li>
+          <li>
+            <div class="user-component">
+              <div class="user-component__column">
+                <img src="./img/3.webp" class="user-component__avatar user-component__avatar--sm">
+                <div class="user-component__text">
+                  <h4 class="user-component__title">허윤진 🐍</h4>
+                  <h6 class="user-component__subtitle">Nice to meet you everybody
+                </div>
+              </div>
+              <div class="user-component__column"></div>
+            </div>
+          </li>
+          <li>
+            <div class="user-component">
+              <div class="user-component__column">
+                <img src="./img/4.webp" class="user-component__avatar user-component__avatar--sm">
+                <div class="user-component__text">
+                  <h4 class="user-component__title">카즈하 🦢</h4>
+                  <h6 class="user-component__subtitle">카즈하아아아아아아아아!!!!</h6>
+                </div>
+              </div>
+              <div class="user-component__column"></div>
+            </div>
+          </li>
+          <li>
+            <div class="user-component">
+              <div class="user-component__column">
+                <img src="./img/5.webp" class="user-component__avatar user-component__avatar--sm">
+                <div class="user-component__text">
+                  <h4 class="user-component__title">홍은채 🐢</h4>
+                  <h6 class="user-component__subtitle">걸어봐 위엄 랔어 라이옹</h6>
+                </div>
+              </div>
+              <div class="user-component__column"></div>
+            </div>
+          </li>
+        </ul>
       </div>
     </main>
 
@@ -102,12 +147,13 @@
         </li>
       </ul>
     </nav>
-    <div id="splash-screen">
-      <i class="fas fa-comment"></i>
-    </div>
+    <div id="splash-screen"></div>
 
     <div id="no-mobile">
-      <div>Your screen is too big 😭</div>
+      <div>
+        <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+        <p>Your screen is too big 😥</p>
+      </div>
     </div>
 
     <script

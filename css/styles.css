@@ -22,10 +22,24 @@
 @import "screens/chat.css";
 
 body {
-  color: #2e363e;
   font-family: "Open Sans", sans-serif;
+  min-width: 375px;
+  min-height: 100vh;
+  height: 100%;
+  color: #333;
+  background: linear-gradient(rgb(101,21,133), white 50%);
+}
+
+body::-webkit-scrollbar {
+  display:none;
 }
 
 .main-screen {
   padding: 0px var(--horizontal-space);
 }
+
+.chat-list li ~ li,
+.user-list li ~ li {
+  margin-top: 20px;
+}
+

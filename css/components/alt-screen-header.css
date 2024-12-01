@@ -5,9 +5,7 @@
   align-items: center;
   justify-content: center;
 }
-.alt-header__column {
-  width: 33%;
-}
+
 
 .alt-header__title {
   font-size: 28px;
